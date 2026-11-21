@@ -1,0 +1,6 @@
+# Yang gak boleh diubah
+PORT=3001
+MEDIA_DIR=kumpulan_media
+
+# Yang boleh diubah
+WIFI_INTERFACE=

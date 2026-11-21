@@ -1,0 +1,96 @@
+* { box-sizing: border-box; }
+
+html, body, #root {
+  margin: 0;
+  height: 100%;
+  background: transparent; /* penting agar overlay transparan di OBS */
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+.overlay {
+  --stroke: 4px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 56px;
+  padding: 12px 24px;
+  color: #fff;
+  font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  text-transform: uppercase;
+  text-shadow:
+    calc(var(--stroke) * -1) calc(var(--stroke) * -1) 0 #000,
+    var(--stroke) calc(var(--stroke) * -1) 0 #000,
+    calc(var(--stroke) * -1) var(--stroke) 0 #000,
+    var(--stroke) var(--stroke) 0 #000,
+    0 calc(var(--stroke) * -1) 0 #000,
+    0 var(--stroke) 0 #000,
+    calc(var(--stroke) * -1) 0 0 #000,
+    var(--stroke) 0 0 #000;
+}
+.overlay-title {
+  max-width: 340px;
+  font-size: 46px;
+  line-height: 1.05;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.overlay-number {
+  min-width: 90px;
+  font-size: 64px;
+  line-height: 1;
+  text-align: center;
+}
+
+.remote {
+  min-height: 100%;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background: #111;
+  color: #fff;
+}
+.remote h1 { margin: 0; font-size: 22px; }
+.remote-number { font-size: 96px; font-weight: 800; line-height: 1; }
+
+.status { font-size: 13px; padding: 4px 12px; border-radius: 999px; }
+.status.on  { background: #14532d; color: #86efac; }
+.status.off { background: #7f1d1d; color: #fca5a5; }
+
+.btn {
+  width: 100%;
+  max-width: 420px;
+  padding: 28px 0;
+  font-size: 32px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 16px;
+  color: #fff;
+  touch-action: manipulation;
+}
+.btn:active { transform: scale(0.97); }
+.btn.plus  { background: #dc2626; }
+.btn.minus { background: #374151; padding: 18px 0; font-size: 24px; }
+.btn.reset { background: #1f2937; padding: 14px 0; font-size: 18px; }
+
+.set-form {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  gap: 10px;
+}
+.set-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 16px;
+  font-size: 22px;
+  border: 2px solid #374151;
+  border-radius: 12px;
+  background: #1f2937;
+  color: #fff;
+  text-align: center;
+}
+.set-form input:focus { outline: none; border-color: #2563eb; }
+.btn.update { width: auto; padding: 16px 24px; font-size: 20px; background: #2563eb; }
+.btn.update:disabled { opacity: 0.4; }

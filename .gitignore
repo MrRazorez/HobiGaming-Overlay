@@ -1,0 +1,14 @@
+kumpulan_media/
+client/dist/
+counter-overlay/server/data.json
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
