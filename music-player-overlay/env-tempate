@@ -1,0 +1,6 @@
+# Yang gak boleh diisi
+PORT=5000
+MUSIC_DIR=isi_lagu
+
+# Yang boleh diisi
+WIFI_INTERFACE=

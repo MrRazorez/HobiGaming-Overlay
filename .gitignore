@@ -1,8 +1,10 @@
 kumpulan_media/
+isi_lagu/
 client/dist/
 counter-overlay/server/data.json
 node_modules/
 dist/
+playlists.json*
 .env
 .env.*
 !.env.example

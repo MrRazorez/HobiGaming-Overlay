@@ -18,6 +18,7 @@ DAFTAR OVERLAY YANG TERSEDIA
 
 1. ###### **Counter Overlay**, overlay penghitung yang bisa digunakan untuk sesi livestream tertentu, misal menghitung total game over setiap main Elden Rings (Death Count), menghitung total kemenangan setiap main Delta Force (Win Count), dan lain-lain.
 2. ###### **Memeboard Overlay**, overlay untuk emoji dalam bentuk meme. overlay ini mendukung pemutaran Audio-Only dan Video. sangat cocok buat streamer yang suka gimmick. Buat contoh, bisa lihat [klip Reza Auditore](https://www.youtube.com/shorts/o50d4dkGy44).
+3. ###### **Music Player Overlay**, overlay pemutar musik tanpa harus terintegrasi ke YouTube Music, Spotify, dan aplikasi musik sejenis. CATATAN : pemutar ini wajib berformat mp4!
 
 TUTORIAL INSTALASI
 ---
@@ -34,7 +35,7 @@ TUTORIAL INSTALASI
 npm install
 ```
 
-4. ###### Untuk folder counter-overlay, cukup jalankan script ini
+4. ###### Untuk folder counter-overlay dan music-player-overlay, cukup jalankan script ini
 ```bash
 npm run build
 npm start
@@ -42,7 +43,8 @@ npm start
 
 5. ###### Untuk folder memeboard-overlay, cukup jalankan script ini
 ```bash
-npm start
+npm run build
+npm run serve
 ```
 
 6. ###### Program ini secara gak langsung bakalan ngebuat server lokal sendiri. Nanti hasilnya bakalan kayak gini.
